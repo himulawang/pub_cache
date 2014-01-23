@@ -1,0 +1,8 @@
+.children
+.project
+packages
+/pubspec.lock
+.buildlog
+build.snapshot
+out
+test/*.js*
