@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="packages/bootjack/css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+  </head>
+  
+  <body>
+    <style>
+      .serif {
+        font-family: Georgia, serif;
+      }
+      .b {
+        font-weight: bold;
+      }
+      .i {
+        font-style: italic;
+      }
+      .u, .u:hover {
+        text-decoration: underline;
+      }
+    </style>
+    
+    <div class="main">
+      <h4>Button</h4>
+      <p>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Danger</button>
+      </p>
+      <div class="btn-group" data-toggle="buttons-checkbox">
+        <button class="btn btn-default serif b">B</button>
+        <button class="btn btn-default serif i">I</button>
+        <button class="btn btn-default serif u">U</button>
+      </div>
+      <div class="btn-group" data-toggle="buttons-radio">
+        <button class="btn btn-default"><i class="glyphicon glyphicon-stop"></i></button>
+        <button class="btn btn-default"><i class="glyphicon glyphicon-play"></i></button>
+        <button class="btn btn-default"><i class="glyphicon glyphicon-eject"></i></button>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-default">Dropdown</button>
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Menu Item #1</a></li>
+          <li><a href="#">Menu Item #2</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Menu Item #3</a></li>
+        </ul>
+      </div>
+      
+      <div class="row">
+        <div class="col-xs-6">
+          <h4>Modal</h4>
+          <button class="btn btn-primary" data-target="#modal" data-toggle="modal">Launch</button>
+          <div id="modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times</button>
+                  <h3 style="margin: 0">Bootjack</h3>
+                </div>
+                <div class="modal-body">
+                  <ul style="margin: 0">
+                    <li>Abundant style resources</li>
+                    <li>Stylish UI components</li>
+                    <li>Non-invasive integration</li>
+                  </ul>
+                </div>
+                <div class="modal-footer" style="margin: 0">
+                  <button class="btn btn-success" data-dismiss="modal">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-xs-6">
+          <h4>Alert</h4>
+          <button id="alert-spawn-btn" class="btn btn-warning"><i class="icon-warning-sign icon-white"></i>&nbsp;Do Not Press</button>
+        </div>
+      </div>
+      <p></p>
+      
+      <p id="alert-pool"></p>
+      
+      <h4>Tab</h4>
+      <ul id="tabs" class="nav nav-tabs">
+        <li class="active">
+          <a href="#panel-1" data-toggle="tab">Preview</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Source
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a data-toggle="tab" href="#panel-2-1">HTML</a></li>
+            <li><a data-toggle="tab" href="#panel-2-2">CSS</a></li>
+            <li><a data-toggle="tab" href="#panel-2-3">Dart</a></li>
+          </ul>
+        </li>
+        <li class="pull-right">
+          <a href="#panel-3" data-toggle="tab">About</a>
+        </li>
+      </ul>
+      
+      <div class="tab-content" style="margin: 20px;">
+        <div class="tab-pane active" id="panel-1">
+          <button id="btn" class="btn btn-info b">Toggle Me!</button>
+        </div>
+        <div class="tab-pane" id="panel-2-1">
+<pre>
+&lt;button id="btn" class="btn btn-info b">Toggle Me!&lt;/button>
+</pre>
+        </div>
+        <div class="tab-pane" id="panel-2-2">
+<pre>
+.b {
+  font-weight: bold;
+}
+</pre>
+        </div>
+        <div class="tab-pane" id="panel-2-3">
+<pre>
+$('#btn').on('click', (DQueryEvent e) {
+  $('#btn')
+  ..toggleClass('btn-info')
+  ..toggleClass('btn-danger');
+});
+</pre>
+        </div>
+        <div class="tab-pane" id="panel-3">
+          <p class="text-success">We can't fit everything into this demo. You can do much more!</p>
+        </div>
+      </div>
+      
+    </div>
+    
+    <script type="application/dart" src="demo.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

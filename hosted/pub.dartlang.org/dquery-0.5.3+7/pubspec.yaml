@@ -1,0 +1,12 @@
+name: dquery
+version: 0.5.3+7
+authors:
+- Simon Pai <simonpai@rikulo.org>
+- ' Tom Yeh <tomyeh@rikulo.org>'
+description: |
+  DQuery is a porting of jQuery in Dart.
+homepage: https://github.com/rikulo/dquery
+documentation: http://blog.rikulo.org/posts/2013/May/General/bootjack-and-dquery/ 
+dependencies:
+  browser: any
+  rikulo_commons: any
