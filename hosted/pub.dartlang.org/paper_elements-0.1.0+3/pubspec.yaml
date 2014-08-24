@@ -1,0 +1,35 @@
+name: paper_elements
+version: 0.1.0+3
+author: Polymer.dart Authors <web-ui-dev@dartlang.org>
+description: Paper elements for Dart
+homepage: https://www.dartlang.org/polymer-dart/
+dependencies:
+  core_elements: '>=0.1.0 <0.2.0'
+  polymer: ">=0.12.0 <0.13.0"
+dev_dependencies:
+  path: ">=1.0.0 <2.0.0"
+transformers:
+- polymer:
+    entry_points:
+      - example/core_scroll_header_panel.html
+      - example/paper_button.html
+      - example/paper_button2.html
+      - example/paper_checkbox.html
+      - example/paper_dialog.html
+      - example/paper_fab.html
+      - example/paper_fab2.html
+      - example/paper_icon_button.html
+      - example/paper_input.html
+      - example/paper_input2.html
+      - example/paper_item.html
+      - example/paper_menu_button.html
+      - example/paper_progress.html
+      - example/paper_radio_button.html
+      - example/paper_radio_group.html
+      - example/paper_ripple.html
+      - example/paper_shadow.html
+      - example/paper_slider.html
+      - example/paper_tabs.html
+      - example/paper_toast.html
+      - example/paper_toggle_button.html
+    lint: false
